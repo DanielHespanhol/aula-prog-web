@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>Formulário</h3>
+    <form>
+        <div>   
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome_aluno">
+        </div>
+        <div>   
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade_aluno">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email_aluno">
+        </div> 
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone_aluno">
+        </div>
+        <div>
+            <label for="textarea">Descrição:</label>
+            <textarea id="textarea" name="descricao_aluno"></textarea>
+        </div>
+        <div>
+            <label for="typedate">Data de Nascimento:</label>
+            <input type="date" id="typedate" name="data_nascimento_aluno">  
+        </div>
+        <div>
+            <label for="file">Selecione o arquivo:</label>
+            <input type="file" id="file" name="arquivo_aluno">  
+        </div>
+        <div>
+            <label for="range">Selecione o tamanho:</label>
+            <input type="range" id="range" name="tamanho_aluno" min="0" max="10" 
+                oninput="valorSelecionado.value = this.value">
+            <output id="valorSelecionado">0</output>
+        </div>
+    </form>
+</body>
+</html>
